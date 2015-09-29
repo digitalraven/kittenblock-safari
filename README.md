@@ -5,4 +5,4 @@ An implementation of [Tom Royal](http://www.tomroyal.com)'s KittenBlock that wor
 Installing
 The easy way:
 
-Download XtoY.safariext and double-click on the file.
+Download kittenblock.safariext and double-click on the file.
