@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>URL Rewrite extension</title>
+<script>
+	(function() {
+		'use strict';
+
+		safari.application.addEventListener('beforeNavigate', function(event) {
+		
+			var exp = new RegExp("/http:\/\/(www\.)?(dailymail|express)\.(co\.uk|com).*", "i");
+		
+			if (event.url.match(exp)) {
+				event.preventDefault();
+				event.target.url = "http://www.teaandkittens.co.uk";
+			}
+
+		}, true);
+
+	})();
+</script>
